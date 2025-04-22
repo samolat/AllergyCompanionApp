@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import TestResultPage from "./pages/TestResultPage";
 import FoodScanPage from "./pages/FoodScanPage";
 import AllergenProfilePage from "./pages/AllergenProfilePage";
+import BarcodeScanner from "./pages/BarcodeScanner";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/test-result" element={<TestResultPage />} />
             <Route path="/food-scan" element={<FoodScanPage />} />
+            <Route path="/barcode-scanner" element={<BarcodeScanner />} />
             <Route path="/profile" element={<AllergenProfilePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

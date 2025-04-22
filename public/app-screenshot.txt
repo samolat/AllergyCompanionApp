@@ -1,0 +1,9 @@
+This is a placeholder for an Allergy Aid Companion app screenshot.
+
+The actual image would show:
+- The app's main dashboard with navigation cards
+- Food scanning and allergen profile features
+- Examples of allergen severity charts
+- Barcode scanning in action
+
+[Screenshot image would be placed here in a production environment] 

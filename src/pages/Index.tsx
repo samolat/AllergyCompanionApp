@@ -3,20 +3,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import BackButton from '@/components/BackButton';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-soft-blue">
-      <div className="text-center max-w-2xl">
-        <h1 className="text-4xl font-bold mb-6 text-primary">Allergy Aid Companion</h1>
-        <div className="grid grid-cols-3 gap-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-soft-blue px-2 py-4 animate-[slide-in-right_0.3s_ease]">
+      <BackButton className="self-start mb-2 ml-1" />
+      <div className="text-center w-full max-w-2xl">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-primary">Allergy Aid Companion</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <Card>
             <CardHeader>
               <CardTitle>Test Results</CardTitle>
             </CardHeader>
             <CardContent>
               <Link to="/test-result">
-                <Button variant="outline" className="w-full">
+                <Button variant="outline" className="w-full hover:scale-105 active:scale-95 transition-transform duration-150">
                   Analyze Test
                 </Button>
               </Link>
@@ -28,7 +30,7 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <Link to="/food-scan">
-                <Button variant="outline" className="w-full">
+                <Button variant="outline" className="w-full hover:scale-105 active:scale-95 transition-transform duration-150">
                   Scan Food
                 </Button>
               </Link>
@@ -40,14 +42,14 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <Link to="/profile">
-                <Button variant="outline" className="w-full">
+                <Button variant="outline" className="w-full hover:scale-105 active:scale-95 transition-transform duration-150">
                   Allergen Profile
                 </Button>
               </Link>
             </CardContent>
           </Card>
         </div>
-        <p className="mt-6 text-muted-foreground">
+        <p className="mt-6 text-muted-foreground text-base">
           Your personal assistant for managing allergies and food safety
         </p>
       </div>

@@ -1,14 +1,17 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import BackButton from '@/components/BackButton';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-soft-blue px-2 py-4 animate-[slide-in-right_0.3s_ease]">
-      <BackButton className="self-start mb-2 ml-1" />
+      <div className="w-full flex justify-between items-center mb-6">
+        <BackButton className="ml-1" />
+        <ThemeToggle />
+      </div>
       <div className="text-center w-full max-w-2xl">
         <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-primary">Allergy Aid Companion</h1>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
